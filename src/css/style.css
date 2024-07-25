@@ -212,3 +212,8 @@ body.fondo {
     align-items: center;
     justify-content: center;
 }
+
+.modal-backdrop {
+    display: none;
+
+}
