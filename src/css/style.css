@@ -1,0 +1,214 @@
+:root {
+    --primario: #9C27B0;
+    --primarioOscuro: #891190;
+    --secundario: #FFCE00;
+    --secundarioOscuro: rgb(233, 287, 2);
+    --blanco: #FFF;
+    --negro: #000;
+
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+
+html {
+    box-sizing: border-box;
+    /* font-size: 62.5%; */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    /* Es el interlineado*/
+
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    /* Es para quitarle a todos los enlaces el interlineado  */
+}
+
+img {
+    width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 1.2rem !important;
+}
+
+
+.icon {
+    color: white;
+}
+
+
+.imagen-principal {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    max-width: 120rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    padding-top: 4rem;
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.eureka {
+    width: 500px;
+    height: 500px;
+}
+
+.text-waterWatch {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+
+}
+
+.back {
+    background-color: #E0F0FD;
+    padding: 3rem;
+
+}
+
+.tamaño {
+    width: 400px;
+    height: 300px;
+}
+
+.circulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    padding-top: 2rem;
+
+
+}
+
+.adorno {
+    background-color: rebeccapurple;
+}
+
+.img-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.blue-line {
+    height: 40px;
+
+}
+
+.texto-cir {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pad {
+    padding-top: 2rem;
+}
+
+.imagen-paquete {
+
+    height: 589px;
+
+}
+
+.hola {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: flex-end;
+    padding: .4rem;
+
+}
+
+.texto-footer {
+    font-size: .9rem;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    padding-top: 1rem;
+
+}
+
+.chino {
+    font-family: JejuGothic;
+}
+
+/* instalacion */
+
+.container-instalacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 15rem;
+}
+
+body.fondo {
+    background: linear-gradient(to right, white 60%, #050842 40%);
+}
+
+.form-instalacion {
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
