@@ -84,40 +84,36 @@
                 <img class="fondoRegister" src="src/img/fondoRegister.png" alt="">
             </div>
             <div class="form-side">
-                <img class="img-registrar" src="src/img/registrar.png" alt="">
-                <div class="register-card">
-                    <h3 class="text-center">Registrate</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Usuario</label>
-                            <input type="email" class="form-control" id="email" placeholder="Nicolas505@gmail.com"
-                                required>
-                        </div>
-                        <div class="mb-3 form-group">
-                            <label for="password" class="form-label">Contraseña</label>
-                            <div class="input-group">
-                                <input type="password" class="form-control" id="password" required>
-                                <button class="btn btn-outline-secondary" type="button" id="password-toggle"
-                                    onclick="togglePassword('password')">
-                                    <i class="fas fa-eye"></i>
-                                </button>
+                <img class="img-calendar" src="src/img/imagenCalendario.png" alt="">
+                <div class="register-card2">
+                    <h3 class="text-center">Elige una fecha de instalación</h3>
+                    <div class="wrapper">
+                        <header>
+                            <p class="current-date"></p>
+                            <div class="icons">
+                                <span id="prev" class="material-symbols-rounded"><i
+                                        class="fas fa-chevron-left"></i></span>
+                                <span id="next" class="material-symbols-rounded"><i
+                                        class="fas fa-chevron-right"></i></span>
                             </div>
+                        </header>
+                        <div class="calendar">
+                            <ul class="weeks">
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                            </ul>
+                            <ul class="days"></ul>
                         </div>
-                        <div class="mb-3 form-group">
-                            <label for="confirm-password" class="form-label">Confirmar contraseña</label>
-                            <div class="input-group">
-                                <input type="password" class="form-control" id="confirm-password" required>
-                                <button class="btn btn-outline-secondary" type="button" id="confirm-password-toggle"
-                                    onclick="togglePassword('confirm-password')">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#mensajeExitoso">Registrar</button>
-                        </div>
-                    </form>
+                    </div>
+                    <div class="text-end pt-2">
+                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#citaExitosa">Continuar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,7 +121,7 @@
 
 
     <!-- Login Modal -->
-    <div class="modal fade" id="mensajeExitoso" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal fade" id="citaExitosa" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -134,15 +130,15 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <h3>¡Se creo correctamente la cuenta!</h3>
+                            <h3>¡Se agendo la cita correctamente!</h3>
 
                         </div>
                         <div class="mb-3 d-flex justify-content-center">
-                            <img class="img-exito" src="src/img/logowaterwatch.png" alt="">
+                            <img class="img-exito" src="src/img/Gracias.png" alt="">
                         </div>
 
                         <div class="text-center">
-                            <a href="agendarCita.html" type="submit" class="btn btn-primary">Continuar</a>
+                            <a href="#" type="submit" class="btn btn-primary">Volver</a>
                         </div>
                     </form>
                 </div>
