@@ -258,6 +258,13 @@ body.fondo {
     /* padding-top: 2rem; */
 }
 
+.gap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
 @media (max-width: 768px) {
     .cont {
         grid-template-columns: repeat(1, 1fr);
@@ -592,4 +599,26 @@ header .current-date {
 .img-calendar {
     width: 500px;
     height: 596px;
+}
+
+
+
+/* empleados */
+
+.rotoplas3 {
+    width: 620px;
+    margin-left: 7rem;
+}
+
+@media (max-width: 760px) {
+    .rotoplas3 {
+        width: 100%;
+        margin: 0;
+
+
+
+
+       
+    }
+
 }
