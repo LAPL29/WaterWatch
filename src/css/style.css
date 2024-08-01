@@ -704,3 +704,7 @@ button.red {
         right: 0px !important;
     }
 }
+
+#mensaje {
+    display: none; /* Inicialmente oculto */
+  }
