@@ -25,36 +25,304 @@
             <div class="container-fluid">
                 <div class="container-fluid d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center justify-content-center">
-                        <a class="navbar-brand" href="#"><img class="img-logo" src="src/img/logo.png" alt=""></a>
-                        <button class="btn btn-primary ms-3" type="button" data-bs-toggle="modal"
-                            data-bs-target="#loginModal" data-bs-backdrop="false">Iniciar Sesión</button>
+                        <a class="navbar-brand" href="index.html"><img class="img-logo" src="src/img/logo.png"
+                                alt=""></a>
+                        <span class="chino">SHITSU</span>
+
                     </div>
 
                     <div class="d-flex align-items-center">
-                        <div class="logo-container logos">
+                    </div>
 
-                            <a href="#" class="mx-2"><i class="fas fa-user fa-2x icon"></i></a>
+                    <a class="mx-2 " data-bs-toggle="modal" data-bs-target="#datosEmpleado" style="cursor: pointer;"><i
+                            class="fas fa-user fa-2x icon"></i></a>
+
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="datosEmpleado" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="modal-header">
+                    <h3>Perfil del empleado</h3>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+
+                        <div class="mb-3  pt-3">
+                            <div class="d-flex align-items-center">
+                                <div class="ms-3">
+                                    <p><strong><i class="fas fa-user"></i> Nombre:</strong> John Doe</p>
+                                    <p><strong><i class="fas fa-envelope"></i> Correo:</strong> johndoe@example.com</p>
+                                    <p><strong><i class="fas fa-phone"></i> Teléfono:</strong> 123-456-7890</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 
+                        <div class="mb-3 d-flex justify-content-center">
+                            <img class="img-exito" src="src/img/logowaterwatch.png" alt="">
+                        </div> -->
+
+
+                        <div class="text-right">
+                            <a href="empleados.html" type="submit" class="btn" style="float: right;">
+                                <i class="fa-solid fa-door-open fa-2x"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- cancelarCita Modal -->
+    <div class="modal fade" id="cancelarCita" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-center">Waterwatch</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <h3>¿Quieres cancelar la cita agendada?</h3>
+
+                        </div>
+                        <div class="mb-3 d-flex justify-content-center">
+                            <img class="img-exito" src="src/img/logowaterwatch.png" alt="">
+                        </div>
+
+                        <div class="text-center">
+                            <a href="citasAgendadas.html" type="submit" class="btn btn-success">Confirmar</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 
+    <div>
+        <img class="imagen-principal-empleado" src="src/img/rotoplas.png" alt="">
+    </div>
+
+    <div class="scheduled-appointments">
+        <h2>Citas agendadas</h2>
+        <!-- <p>No hay citas pendientes...</p> -->
+        <div id="carouselExampleControls" class="carousel slide pt-3" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-between">
+                        <div class="card">
+                            <h3>Tipo de instalación</h3>
+                            <p>Instalación de dispositivo</p>
+                            <p><strong>Fecha programada</strong></p>
+                            <p>10 de noviembre del 2024</p>
+                            <p><strong>Hora</strong></p>
+                            <p>2:30 p.m.</p>
+                            <div>
+                                <a href="completarCita.html" class="btn btn-success">Aceptar</a>
+                                <button class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#cancelarCita">Cancelar</button>
+                            </div>
+
+                        </div>
+
+                        <div class=" card">
+                            <h3>Tipo de instalación</h3>
+                            <p>Instalación de dispositivo</p>
+                            <p><strong>Fecha programada</strong></p>
+                            <p>16 de Octubre del 2024</p>
+                            <p><strong>Hora</strong></p>
+                            <p>3:30 p.m.</p>
+                            <div>
+                                <a href="completarCita.html" class="btn btn-success">Aceptar</a>
+                                <button class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#cancelarCita">Cancelar</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>Tipo de instalación</h3>
+                            <p>Instalación de dispositivo</p>
+                            <p><strong>Fecha programada</strong></p>
+                            <p>18 de Octubre del 2024</p>
+                            <p><strong>Hora</strong></p>
+                            <p>4:30 p.m.</p>
+                            <div>
+                                <a href="completarCita.html" class="btn btn-success">Aceptar</a>
+                                <button class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#cancelarCita">Cancelar</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-between">
+                        <div class="card ">
+                            <h3>Tipo de instalación</h3>
+                            <p>Instalación de dispositivo</p>
+                            <p><strong>Fecha programada</strong></p>
+                            <p>10 de noviembre del 2024</p>
+                            <p><strong>Hora</strong></p>
+                            <p>2:30 p.m.</p>
+                            <div>
+                                <a href="completarCita.html" class="btn btn-success">Aceptar</a>
+                                <button class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#cancelarCita">Cancelar</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>Tipo de instalación</h3>
+                            <p>Instalación de dispositivo</p>
+                            <p><strong>Fecha programada</strong></p>
+                            <p>10 de noviembre del 2024</p>
+                            <p><strong>Hora</strong></p>
+                            <p>2:30 p.m.</p>
+                            <div>
+                                <a href="completarCita.html" class="btn btn-success">Aceptar</a>
+                                <button class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#cancelarCita">Cancelar</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>Tipo de instalación</h3>
+                            <p>Instalación de dispositivo</p>
+                            <p><strong>Fecha programada</strong></p>
+                            <p>10 de noviembre del 2024</p>
+                            <p><strong>Hora</strong></p>
+                            <p>2:30 p.m.</p>
+                            <div>
+                                <a href="completarCita.html" class="btn btn-success">Aceptar</a>
+                                <button class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#cancelarCita">Cancelar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-        </nav>
+
+                <!-- Agrega más elementos del carrusel según sea necesario -->
+            </div>
+            <div class="">
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
 
 
 
+    <div class="unscheduled-appointments p-2">
+        <h2>Citas no agendadas</h2>
 
-    </header>
+        <div id="carouselExampleControls" class="carousel slide pt-3" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-between">
+                        <div class="card">
+                            <h3>Tipo de instalación</h3>
+                            <p>Instalación de dispositivo</p>
+                            <p><strong>Fecha programada</strong></p>
+                            <p>10 de noviembre del 2024</p>
+                            <p><strong>Hora</strong></p>
+                            <p>2:30 p.m.</p>
+                            <button>Aceptar</button>
+                        </div>
+                        <div class="card">
+                            <h3>Tipo de instalación</h3>
+                            <p>Instalación de dispositivo</p>
+                            <p><strong>Fecha programada</strong></p>
+                            <p>16 de Octubre del 2024</p>
+                            <p><strong>Hora</strong></p>
+                            <p>3:30 p.m.</p>
+                            <button>Aceptar</button>
+                        </div>
+                        <div class="card">
+                            <h3>Tipo de instalación</h3>
+                            <p>Instalación de dispositivo</p>
+                            <p><strong>Fecha programada</strong></p>
+                            <p>18 de Octubre del 2024</p>
+                            <p><strong>Hora</strong></p>
+                            <p>4:30 p.m.</p>
+                            <button>Aceptar</button>
+                        </div>
 
-    <div>
-        <img class="imagen-principal" src="src/img/rotoplas.png" alt="">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-between">
+                        <div class="card ">
+                            <h3>Tipo de instalación</h3>
+                            <p>Instalación de dispositivo</p>
+                            <p><strong>Fecha programada</strong></p>
+                            <p>10 de noviembre del 2024</p>
+                            <p><strong>Hora</strong></p>
+                            <p>2:30 p.m.</p>
+                            <button>Aceptar</button>
+                        </div>
+                        <div class="card">
+                            <h3>Tipo de instalación</h3>
+                            <p>Instalación de dispositivo</p>
+                            <p><strong>Fecha programada</strong></p>
+                            <p>10 de noviembre del 2024</p>
+                            <p><strong>Hora</strong></p>
+                            <p>2:30 p.m.</p>
+                            <button>Aceptar</button>
+                        </div>
+                        <div class="card">
+                            <h3>Tipo de instalación</h3>
+                            <p>Instalación de dispositivo</p>
+                            <p><strong>Fecha programada</strong></p>
+                            <p>10 de noviembre del 2024</p>
+                            <p><strong>Hora</strong></p>
+                            <p>2:30 p.m.</p>
+                            <button>Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agrega más elementos del carrusel según sea necesario -->
+            </div>
+            <div class="">
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+
+        </div>
     </div>
 
 
 
     <!-- Footer -->
-    <!-- <footer class="bg-dark text-white">
+    <footer class="bg-dark text-white">
         <div>
             <a class="navbar-brand" href="#"><img class="img-logo" src="src/img/logo.png" alt=""></a>
             <span class="chino">SHITSU</span>
@@ -62,17 +330,21 @@
         </div>
         <p class="texto-footer">© Waterwatch todos los derechos reservados 2024.</p>
 
-    </footer> -->
+    </footer>
 
 
 </body>
 
 
 
-
+<script src="src/js/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 
