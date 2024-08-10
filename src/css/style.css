@@ -706,5 +706,17 @@ button.red {
 }
 
 #mensaje {
-    display: none; /* Inicialmente oculto */
-  }
+    display: none;
+    /* Inicialmente oculto */
+}
+
+.cont2 {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* align-items: center; */
+}
+.links {
+    display: flex;
+    flex-direction: column;
+}
