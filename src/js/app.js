@@ -15,8 +15,19 @@ function togglePassword(id) {
 }
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Obtén la URL actual
+    var currentUrl = window.location.pathname.split("/").pop();
 
+    // Obtén todos los enlaces
+    var links = document.querySelectorAll('.links a');
 
-
-
+    // Recorre los enlaces para agregar la clase activa al correspondiente
+    links.forEach(function (link) {
+        var linkUrl = link.getAttribute('href');
+        if (linkUrl === currentUrl) {
+            link.classList.add('active-link');
+        }
+    });
+});
 

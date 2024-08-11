@@ -68,6 +68,9 @@ h3 {
     font-size: 1.2rem !important;
 }
 
+h4 {
+    padding-top: .5rem;
+}
 
 .icon {
     color: white;
@@ -716,7 +719,31 @@ button.red {
     grid-template-columns: repeat(2, 1fr);
     /* align-items: center; */
 }
+
 .links {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.links a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #2980b9;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+}
+
+.active-link {
+    border-bottom: 2.5px solid #333;
+    width: 30%;
 }
