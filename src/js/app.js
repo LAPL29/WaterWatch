@@ -31,3 +31,56 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+// fetch('http://3.149.242.43:6969/client/register', {
+//     method: 'POST',
+//     headers: {
+//         'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify({
+//         first_name: "Jaime",
+//         last_name: "Dennis",
+//         email: "jaime@gmail.com",
+//         username: "jaime",
+//         password: "123",
+//         country_code: "52",
+//         phone_number: "123456789",
+//         state: "Sinaloa",
+//         city: "Mazatlán",
+//         street: "Calle Prin",
+//         house_number: "24000",
+//         neighborhood: "Monos",
+//         postal_code: "234567"
+//     })
+// })
+//     .then(response => {
+//         if (!response.ok) {
+//             throw new Error('Network response was not ok');
+//         }
+//         return response.json();
+//     })
+//     .then(data => {
+//         // Manejar la respuesta de la API
+//         console.log(data);
+//     })
+//     .catch(error => {
+//         // Manejar errores de la solicitud
+//         console.error('Error:', error);
+//     });
+
+
+// fetch('https://pokeapi.co/api/v2/pokemon')
+//     .then(response => {
+//         if (!response.ok) {
+//             throw new Error('Network response was not ok');
+//         }
+//         return response.json();
+//     })
+//     .then(data => {
+//         // Handle the API response
+//         console.log(data);
+//     })
+//     .catch(error => {
+//         // Handle request errors
+//         console.error('Error:', error);
+//     });
